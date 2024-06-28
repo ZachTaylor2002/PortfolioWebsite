@@ -1,8 +1,9 @@
 import React from 'react'
 import './index.scss'
+import Sidebar from '../Sidebar'
 
 const Layout = () => {
-  return <>Hellos</>
+  return <><Sidebar></Sidebar></>
 }
 
 export default Layout
