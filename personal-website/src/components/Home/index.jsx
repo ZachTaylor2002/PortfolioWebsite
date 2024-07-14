@@ -16,7 +16,7 @@ const Home = () => {
                 MTSU HackMT 2024 winner
                 </h1>
                 <h2>Junior in Computer Science, Middle Tennessee State University.</h2>
-                <h2>Seeking a Software Engineering Internship</h2>
+                <h2 className="internship">Seeking a Software Engineering Internship</h2>
                 <Link to="/portfolio" className="flat-button">
                 VIEW PROJECTS
           </Link>
