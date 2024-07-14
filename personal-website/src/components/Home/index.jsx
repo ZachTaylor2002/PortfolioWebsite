@@ -46,6 +46,7 @@ const Home = () => {
                     />
                 </h1>
                 <h2>Junior in Computer Science, Middle Tennessee State University.</h2>
+                <h2>MTSU Association of Computing Machinery President.</h2>
                 <h2 className="internship">Seeking a Software Engineering Internship</h2>
                 <Link to="/portfolio" className="flat-button">
                     VIEW PROJECTS
