@@ -1,28 +1,57 @@
 import LogoZ from '../../assets/images/Z.png';
-import './index.scss'
-import { Link } from 'react-router-dom'
+import './index.scss';
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import AnimatedLetters from '../AnimatedLetters';
 
 const Home = () => {
+    const [letterClass, setLetterClass] = useState('text-animate');
+    const nameArray = ['a', 'c', 'h', ' ', 'T', 'a', 'y', 'l', 'o', 'r'];
+    const jobArray = [
+        'M', 'T', 'S', 'U', ' ',
+        'H', 'a', 'c', 'k', 'M', 'T', ' ',
+        '2', '0', '2', '4', ' ',
+        'w', 'i', 'n', 'n', 'e', 'r'
+    ];
 
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 4000);
 
+        return () => clearTimeout(timeout);
+    }, []);
 
-    return(
+    return (
         <div className="container home-page">
             <div className="text-zone">
-                <h1>Hi, <br/> I'm 
-                <img src={LogoZ} alt="developer"/>
-                ach Taylor,
-                <br/>
-                MTSU HackMT 2024 winner
+                <h1>
+                    <span className={letterClass}>H</span>
+                    <span className={`${letterClass} _12`}>i,</span>
+                    <br />
+                    <span className={`${letterClass} _13`}>I</span>
+                    <span className={`${letterClass} _14`}>'m</span>
+                    <img src={LogoZ} alt="developer" />
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={nameArray}
+                        idx={15}
+                    />
+                    <br/>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={jobArray}
+                        idx={25}
+                    />
                 </h1>
                 <h2>Junior in Computer Science, Middle Tennessee State University.</h2>
                 <h2 className="internship">Seeking a Software Engineering Internship</h2>
                 <Link to="/portfolio" className="flat-button">
-                VIEW PROJECTS
-          </Link>
+                    VIEW PROJECTS
+                </Link>
             </div>
         </div>
     );
-}
+};
 
-export default Home
+export default Home;
