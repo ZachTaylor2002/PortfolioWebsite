@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import LogoZ from '../../assets/images/Z.png';
 import LogoSubtitle from '../../assets/images/Long-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faSuitcase } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 import { faGithub,} from '@fortawesome/free-brands-svg-icons';
 
@@ -21,7 +21,7 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink activeClassName="active" className="portfolio-link" to="/portfolio">
-                <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+                <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
             </NavLink>
             <a className='LinkedIn-link' href="https://www.linkedin.com/in/z-taylor02" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
