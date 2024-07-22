@@ -1,0 +1,16 @@
+{
+    "portfolio":[
+        {
+        "cover": "/portfolio/Amazon.jpg", 
+        "title": "Amazon StoreFront Simulator",
+        "description": "HTML, CSS, JavaScript, Git",
+        "url": "https://zachtaylor2002.github.io/Amazon-Storefront-Simulator/amazon.html"
+        },
+        {
+            "cover": "/portfolio/FitnessWizard.png",
+            "title": "Fitness Wizard",
+            "description": "ReactJS, TailwindCSS, JavaScript",
+            "url": "https://fitnesswizard.netlify.app/"
+        }
+    ] 
+}
