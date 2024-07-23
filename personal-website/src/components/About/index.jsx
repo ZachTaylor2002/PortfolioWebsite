@@ -2,7 +2,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, faReact, faJsSquare, faGitAlt, faNodeJs  } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faCss3, faReact, faJava, faPython, faNodeJs  } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -48,10 +48,10 @@ const About = () => {
                     <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
                 </div>
                 <div className="face4">
-                    <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                    <FontAwesomeIcon icon={faJava} color="#EC4D28" />
                 </div>
                 <div className="face5">
-                    <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                    <FontAwesomeIcon icon={faPython} color="#ffd700" />
                 </div>
                 <div className="face6">
                     <FontAwesomeIcon icon={faNodeJs} color="#68A063" />
