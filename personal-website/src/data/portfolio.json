@@ -1,22 +1,28 @@
 {
     "portfolio":[
         {
-        "cover": "/portfolio/Amazon.jpg", 
-        "title": "Amazon StoreFront Simulator",
-        "description": "HTML, CSS, JavaScript, Git",
-        "url": "https://zachtaylor2002.github.io/Amazon-Storefront-Simulator/amazon.html"
-        },
-        {
             "cover": "/portfolio/FitnessWizard.png",
             "title": "Fitness Wizard",
             "description": "ReactJS, TailwindCSS, JavaScript",
             "url": "https://fitnesswizard.netlify.app/"
         },
         {
-            "cover": "",
+            "cover": "/portfolio/Authentication API.jpg",
             "title": "Authentication API",
-            "description": "NodeJS, ExpressJS, TypeScript, MongoDB, Typegoose",
+            "description": "NodeJS, ExpressJS, TypeScript, MongoDB",
             "url": "https://github.com/ZachTaylor2002/Authentication-API"
+        },
+        {
+            "cover": "/portfolio/Amazon.jpg", 
+            "title": "Amazon StoreFront Simulator",
+            "description": "HTML, CSS, JavaScript, Git",
+            "url": "https://zachtaylor2002.github.io/Amazon-Storefront-Simulator/amazon.html"
+        },
+        {
+            "cover": "", 
+            "title": "Project 4",
+            "description": "Project 4",
+            "url": ""
         }
     ] 
 }
