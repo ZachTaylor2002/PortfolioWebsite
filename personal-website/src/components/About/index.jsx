@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3, faReact, faJava, faPython, faNodeJs  } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import LanguageList from './LanguageList';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -13,7 +14,7 @@ const About = () => {
             setLetterClass('text-animate-hover');
         }, 3000);
 
-        return () => clearTimeout(timeout); // Cleanup function to clear the timeout
+        return () => clearTimeout(timeout); 
     }, []);
 
     return (
@@ -24,14 +25,15 @@ const About = () => {
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-                        idx={7} // Adjust idx to a valid index within strArray
+                        idx={7} 
                     />
                 </h1>
                 <p>
-                    I'm a very ambitious front-end developer looking for a role in an
-                    established IT company with the opportunity to work with the latest
-                    technologies on challenging and diverse projects.
+                I am a very ambitious aspiring software developer with a unique background that has prepared me to be a team player who communicates effectively, faces problems analytically and has the technical skills to tackle any challenge. 
+                <br/>
+                    <LanguageList />
                 </p>
+
 
                 
             </div>
