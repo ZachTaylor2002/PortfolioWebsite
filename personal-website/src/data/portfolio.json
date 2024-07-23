@@ -11,6 +11,12 @@
             "title": "Fitness Wizard",
             "description": "ReactJS, TailwindCSS, JavaScript",
             "url": "https://fitnesswizard.netlify.app/"
+        },
+        {
+            "cover": "",
+            "title": "Authentication API",
+            "description": "NodeJS, ExpressJS, TypeScript, MongoDB, Typegoose",
+            "url": "https://github.com/ZachTaylor2002/Authentication-API"
         }
     ] 
 }
