@@ -34,7 +34,7 @@ const Home = () => {
                     <br />
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
-                    <img src={LogoZ} alt="developer" />
+                    <img src={LogoZ} alt="developer"  />
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={nameArray}
@@ -54,7 +54,7 @@ const Home = () => {
                     VIEW PROJECTS
                 </Link>
             </div>
-            <Logo className="Home"/>
+            <Logo className="Home" />
         </div>
         <Loader type="pacman" />
     </>
@@ -62,3 +62,4 @@ const Home = () => {
 };
 
 export default Home;
+
