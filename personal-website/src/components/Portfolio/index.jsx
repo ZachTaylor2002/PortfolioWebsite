@@ -26,9 +26,9 @@ const Portfolio = () => {
                     portfolio.map((port, idx) => (
                         <div className="image-box" key={idx}>
                             <img 
-                                src={port.cover} // Use "cover" instead of "image"
+                                src={port.cover} 
                                 className="portfolio-image"
-                                alt={port.title} // Updated alt text for accessibility
+                                alt={port.title} 
                             />
                             <div className="content">
                                 <p className="title">{port.title}</p> 
@@ -54,7 +54,7 @@ const Portfolio = () => {
             <h1 className="page-title">
                 <AnimatedLetters
                  letterClass={letterClass}
-                 strArray={"Portfolio".split("")}
+                 strArray={"Projects".split("")}
                  idx={15}
                 />
             </h1>
