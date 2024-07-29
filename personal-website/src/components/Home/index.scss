@@ -90,61 +90,78 @@
     }
 }
   
-  @media screen and (max-width: 1000px) {
-    .tags,
-    .home-page h1:before,
-    .home-page h1:after {
-      display: none;
-    }
-  
-    .home-page .text-zone {
-      position: initial;
-      width: 100%;
-      transform: none;
-      padding: 10px;
-      box-sizing: border-box;
-      font-size: 8px; 
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .logo-container {
-      display: none;
-    }
-  
-    .home-page .flat-button {
-      float: none;
-      display: inline-block;
-      margin: 20px auto 30px;
-      width: auto;
-      min-width: 150px;
-      max-width: 80%;
-      padding: 12px 15px;
-      font-size: 16px;
-      text-align: center;
-      box-sizing: border-box;
-      transition: all 0.3s ease-out;
-    }
-  
-    .home-page h2 {
-      display: relative;
-      font-size: 8px; 
-      text-align: center;
-    }
-  
-    .home-page h2.internship {
-      display: block;
-      word-wrap: break-word;
-      word-break: break-word;
-      max-width: 100%;
-      font-size: 1.2em; 
-      margin: 10px 0; 
-    }
-    .home-page .Home {
-      display: block;
-      margin: 20px auto;
-      max-width: 80%;
+@media screen and (max-width: 1000px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
   }
-    
+
+  .home-page .text-zone {
+    position: initial;
+    width: 100%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 8px; 
+    justify-content: center;
+    text-align: center;
   }
-  
+
+  .logo-container {
+    display: none;
+  }
+
+  .home-page .flat-button {
+    float: none;
+    display: inline-block;
+    margin: 20px auto 30px;
+    width: auto;
+    min-width: 150px;
+    max-width: 80%;
+    padding: 12px 15px;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+  }
+
+  .home-page h2 {
+    display: relative;
+    font-size: 8px; 
+    text-align: center;
+  }
+
+  .home-page h2.internship {
+    display: block;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+    font-size: 1.2em; 
+    margin: 10px 0; 
+  }
+
+  .home-page .Home {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    width: 50%;
+    height: auto;
+    border-radius: 15px; 
+    overflow: hidden; 
+    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+  }
+
+.home-page .Home:hover {
+  transform: scale(1.05); 
+  opacity: 0.8; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1); 
+}
+}
+
+@media screen and (min-width: 1001px) {
+  .home-page .Home {
+    display: none;
+  }
+}

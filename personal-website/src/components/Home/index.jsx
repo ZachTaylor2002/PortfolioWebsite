@@ -1,10 +1,11 @@
 import LogoZ from '../../assets/images/Z.png';
+import Head from '../../assets/images/Headshot.jpg';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
-import Loader from 'react-loaders'
+import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -34,7 +35,7 @@ const Home = () => {
                     <br />
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
-                    <img src={LogoZ} alt="developer"  />
+                    <img src={LogoZ} alt="developer" />
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={nameArray}
@@ -53,8 +54,9 @@ const Home = () => {
                 <Link to="/portfolio" className="flat-button">
                     VIEW PROJECTS
                 </Link>
+                <img src={Head} alt="Profile" className="Home" />
             </div>
-            <Logo className="Home" />
+            <Logo />
         </div>
         <Loader type="pacman" />
     </>
@@ -62,4 +64,3 @@ const Home = () => {
 };
 
 export default Home;
-
