@@ -28,8 +28,8 @@ const About = () => {
                         idx={7} 
                     />
                 </h1>
-                <p>
-                I am a very ambitious aspiring software developer with a unique background that has prepared me to be a team player who communicates effectively, faces problems analytically and has the technical skills to tackle any challenge. 
+                <p className="about-text">
+                Hello! I'm Zachary Taylor, a passionate and ambitious software developer-in-training at Middle Tennessee State University, where I lead as the president of the MTSU ACM. My journey in tech is fueled by a blend of analytical problem-solving and effective communication, honed through collaborative projects and a diverse technical toolkit including React, TypeScript, and JavaScript.
                 <br/>
                     <LanguageList />
                 </p>

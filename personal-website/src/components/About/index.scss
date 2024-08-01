@@ -8,6 +8,17 @@
   right: 0;
   overflow: hidden;
 }
+.about-page {
+  .text-zone {
+    p {
+      font-family:  Verdana,sans-serif; 
+      font-size: 15px;
+      line-height: 1.5; 
+      margin-bottom: 10px; 
+      margin-top: -20px;
+    }
+  }
+}
 
 .cubespinner {
   animation-name: spincube;
