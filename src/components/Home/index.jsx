@@ -27,39 +27,44 @@ const Home = () => {
 
     return (
         <>
-        <div className="container home-page">
-            <div className="text-zone">
-                <h1>
-                    <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i,</span>
-                    <br />
-                    <span className={`${letterClass} _13`}>I</span>
-                    <span className={`${letterClass} _14`}>'m</span>
-                    <img src={LogoZ} alt="developer" />
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={nameArray}
-                        idx={15}
-                    />
-                    <br/>
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={jobArray}
-                        idx={25}
-                    />
-                </h1>
-                <h2>Junior in Computer Science, Middle Tennessee State University.</h2>
-                <h2 className="club">MTSU Association of Computing Machinery President.</h2>
-                <h2 className="internship">Seeking a Software Engineering Internship</h2>
-                <Link to="/portfolio" className="flat-button">
-                    VIEW PROJECTS
-                </Link>
-                <img src={Head} alt="Profile" className="Home" />
+            <div className="container home-page">
+                <div className="text-zone">
+                    <h1>
+                        <span className={letterClass}>H</span>
+                        <span className={`${letterClass} _12`}>i,</span>
+                        <br />
+                        <span className={`${letterClass} _13`}>I</span>
+                        <span className={`${letterClass} _14`}>'m</span>
+                        <img src={LogoZ} alt="developer" />
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={nameArray}
+                            idx={15}
+                        />
+                        <br/>
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={jobArray}
+                            idx={25}
+                        />
+                    </h1>
+                    <h2 className="club">
+                    <span className="full-text">Junior in Computer Science, Middle Tennessee State University.</span>
+                    <span className="short-text">Junior at MTSU in CS<br></br></span>
+                    <br></br>
+                    <span className="full-text">MTSU Association of Computing Machinery President</span>
+                    <span className="short-text">MTSU ACM President</span>
+                    </h2>
+                    <h2 className="internship">Seeking a Software Engineering Internship</h2>
+                    <Link to="/portfolio" className="flat-button">
+                        VIEW PROJECTS
+                    </Link>
+                    <img src={Head} alt="Profile" className="Home" />
+                </div>
+                <Logo />
             </div>
-            <Logo />
-        </div>
-        <Loader type="pacman" />
-    </>
+            <Loader type="pacman" />
+        </>
     );
 };
 

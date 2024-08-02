@@ -1,67 +1,67 @@
 .home-page {
-    .text-zone {
+  .text-zone {
       position: absolute;
       left: 10%;
       top: 50%;
       transform: translateY(-50%);
-      width: 50%; /* Increase the width as needed */
+      width: 80%; /* Increase the width as needed */
       max-height: 90%;
-    }
-  
-    h1 {
+  }
+
+  h1 {
       color: #fff;
-      font-size: 53px;
+      font-size: 48px; /* Adjusted font size */
       margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
-  
+
       &:before {
-        font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
-        font-size: 18px;
-        position: absolute;
-        margin-top: -40px;
-        left: -15px;
-        opacity: 0.6;
+          font-family: 'La Belle Aurore', cursive;
+          color: #ffd700;
+          font-size: 18px;
+          position: absolute;
+          margin-top: -40px;
+          left: -15px;
+          opacity: 0.6;
       }
-  
+
       &:after {
-        font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
-        font-size: 18px;
-        position: absolute;
-        margin-top: 18px;
-        margin-left: 20px;
-        animation: fadeIn 1s 1.7s backwards;
-        opacity: 0.6;
+          font-family: 'La Belle Aurore', cursive;
+          color: #ffd700;
+          font-size: 18px;
+          position: absolute;
+          margin-top: 18px;
+          margin-left: 20px;
+          animation: fadeIn 1s 1.7s backwards;
+          opacity: 0.6;
       }
-  
+
       img {
-        width: 50px;
-        margin-left: 20px;
-        opacity: 0;
-        height: auto;
-        animation: rotateIn 1s linear both;
-        animation-delay: 1.4s;
+          width: 50px;
+          margin-left: 20px;
+          opacity: 0;
+          height: auto;
+          animation: rotateIn 1s linear both;
+          animation-delay: 1.4s;
       }
-    }
-  
-    h2 {
-      color: #ade8f4;
-      margin-top: 20px;
-      font-weight: 400;
-      font-family: sans-serif;
-      letter-spacing: 3px;
-      animation: fadeIn 1s 1.8s backwards;
-      white-space: nowrap; /* Prevent text wrapping */
-    }
-  
-    .internship {
+  }
+
+  h2 {
+    color: #ade8f4;
+    margin-top: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .internship {
       color: #ffd700;
       font-weight: bold;
-    }
-  
-    .flat-button {
+  }
+
+  .flat-button {
       color: #ffd700;
       font-size: 13px;
       font-weight: 400;
@@ -74,100 +74,108 @@
       float: left;
       animation: fadeInAnimation 1s 1.8s backwards;
       white-space: nowrap;
-  
+
       &:hover {
-        background: #ffd700;
-        color: #333;
+          background: #ffd700;
+          color: #333;
       }
-    }
   }
 
-  @media screen and (max-width: 1200px){
-    .home-page{
-        .logo-container {
-            width: 400px;
-        }
-    }
+  .club .short-text {
+      display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+      .club .full-text {
+          display: none;
+      }
+      .club .short-text {
+          display: inline;
+      }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-page {
+      .logo-container {
+          width: 300px; /* Adjusted width */
+      }
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .tags,
   .home-page h1:before,
   .home-page h1:after {
-    display: none;
+      display: none;
   }
 
   .home-page .text-zone {
-    position: initial;
-    width: 100%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 8px; 
-    justify-content: center;
-    text-align: center;
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 14px; 
+      justify-content: center;
+      text-align: center;
   }
 
   .logo-container {
-    display: none;
+      display: none;
   }
 
   .home-page .flat-button {
-    float: none;
-    display: inline-block;
-    margin: 20px auto 30px;
-    width: auto;
-    min-width: 150px;
-    max-width: 80%;
-    padding: 12px 15px;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: border-box;
-    transition: all 0.3s ease-out;
+      float: none;
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 16px;
+      text-align: center;
+      box-sizing: border-box;
+      transition: all 0.3s ease-out;
+      margin-bottom: 999%;
   }
 
   .home-page h2 {
-    display: relative;
-    font-size: 8px; 
-    text-align: center;
+      display: block;
+      font-size: 14px; /* Adjusted font size */
+      text-align: center;
   }
+
   .home-page h2.club {
-    display: relative;
-    font-size: 8px; 
-    text-align: center;
-    font-size: 1.4em;
+      font-size: 1.4em;
   }
 
   .home-page h2.internship {
-    display: block;
-    word-wrap: break-word;
-    word-break: break-word;
-    max-width: 100%;
-    font-size: 1.9em; 
-    margin: 10px 0; 
+      display: block;
+      word-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
+      font-size: 1.1em; 
+      margin-bottom: 6%;
   }
 
   .home-page .Home {
-    display: block;
-    margin: 20px auto;
-    max-width: 80%;
-    width: 50%;
-    height: auto;
-    border-radius: 15px; 
-    overflow: hidden; 
-    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+      display: block;
+      margin: 20px auto;
+      max-width: 80%;
+      width: 50%;
+      height: auto;
+      border-radius: 15px; 
+      overflow: hidden; 
+      transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
   }
 
-.home-page .Home:hover {
-  transform: scale(1.05); 
-  opacity: 0.8; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  filter: brightness(1.1); 
-}
+  .home-page .Home:hover {
+      transform: scale(1.05); 
+      opacity: 0.8; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      filter: brightness(1.1); 
+  }
 }
 
 @media screen and (min-width: 1001px) {
   .home-page .Home {
-    display: none;
+      display: none;
   }
 }
