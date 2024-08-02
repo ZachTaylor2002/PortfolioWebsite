@@ -89,7 +89,7 @@
         }
     }
 }
-  
+
 @media screen and (max-width: 1000px) {
   .tags,
   .home-page h1:before,
@@ -131,13 +131,19 @@
     font-size: 8px; 
     text-align: center;
   }
+  .home-page h2.club {
+    display: relative;
+    font-size: 8px; 
+    text-align: center;
+    font-size: 1.4em;
+  }
 
   .home-page h2.internship {
     display: block;
     word-wrap: break-word;
     word-break: break-word;
     max-width: 100%;
-    font-size: 1.2em; 
+    font-size: 1.9em; 
     margin: 10px 0; 
   }
 
