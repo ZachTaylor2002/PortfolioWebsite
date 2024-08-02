@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3, faReact, faJava, faPython, faNodeJs  } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import LanguageList from './LanguageList';
+import StarryBackground from './StarryBackground';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -37,8 +38,9 @@ const About = () => {
 
                 
             </div>
-
+            
             <div className="stage-cube-cont">
+            <StarryBackground />
                 <div className="cubespinner">
                 <div className="face1">
                     <FontAwesomeIcon icon={faHtml5} color="#F06529" />
