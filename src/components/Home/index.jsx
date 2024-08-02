@@ -49,7 +49,7 @@ const Home = () => {
                         />
                     </h1>
                     <h2 className="club">
-                    <span className="full-text">Junior in Computer Science, Middle Tennessee State University.</span>
+                    <span className="full-text">Junior in Computer Science, Middle Tennessee State University.<br></br></span>
                     <span className="short-text">Junior at MTSU in CS<br></br></span>
                     <br></br>
                     <span className="full-text">MTSU Association of Computing Machinery President</span>
