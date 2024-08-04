@@ -55,7 +55,7 @@ const Home = () => {
                     <span className="full-text">MTSU Association of Computing Machinery President</span>
                     <span className="short-text">MTSU ACM President</span>
                     </h2>
-                    <h2 className="internship">Seeking an Internship</h2>
+                    <h2 className="internship">Seeking a Software Engineering Internship</h2>
                     <Link to="/portfolio" className="flat-button">
                         VIEW PROJECTS
                     </Link>
