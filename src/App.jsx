@@ -6,6 +6,7 @@ import './index.css';
 import Home from './components/Home'
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Tech from './components/About/Tech';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
+        <Route path="about/tech" element={<Tech />} />
         <Route path='/portfolio' element={<Portfolio />} />
       </Route>
       </Routes>

@@ -6,6 +6,8 @@ import { faHtml5, faCss3, faReact, faJava, faPython, faNodeJs  } from '@fortawes
 import Loader from 'react-loaders'
 import LanguageList from './LanguageList';
 import StarryBackground from './StarryBackground';
+import { Link } from 'react-router-dom'; 
+
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -30,9 +32,10 @@ const About = () => {
                     />
                 </h1>
                 <p className="about-text">
-                Hello! I'm Zachary Taylor, a passionate and ambitious software developer-in-training at Middle Tennessee State University, where I lead as the president of the MTSU ACM. My journey in tech is fueled by a blend of analytical problem-solving and effective communication, honed through collaborative projects and a diverse technical toolkit including React, TypeScript, and JavaScript.
+                Hello! I'm Zachary Taylor, a passionate and ambitious software developer-in-training at Middle Tennessee State University, where I lead as the president of the MTSU ACM. My journey in tech is fueled by a blend of analytical problem-solving and effective communication, honed through collaborative projects and a diverse technical toolkit including Python, TypeScript, and JavaScript.
                 <br/>
                     <LanguageList />
+                    <Link to="/about/tech" className="flat-button">FRAMEWORKS/TECHNOLOGIES</Link>
                 </p>
 
 
