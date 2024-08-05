@@ -30,7 +30,7 @@ const About = () => {
                         <AnimatedLetters letterClass={letterClass}  strArray = {"About me".split("")} idx={15}/>
                     </h1>
                     <p>
-                    I’m an ambitious software developer-in-training at Middle Tennessee State University and president of the MTSU ACM. My unique background has prepared me to be a team player who communicates effectively, solves problems analytically.
+                    I’m an ambitious software developer-in-training at Middle Tennessee State University and president of the MTSU ACM. My unique background has prepared me to be a team player who communicates effectively and solves problems analytically.
                     <br/>
                     <DevList />
                     <Link to="/about" className="flat-button">LANGUAGES</Link>
