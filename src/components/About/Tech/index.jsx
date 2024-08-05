@@ -30,7 +30,7 @@ const About = () => {
                         <AnimatedLetters letterClass={letterClass}  strArray = {"About me".split("")} idx={15}/>
                     </h1>
                     <p>
-                    Hello! I'm Zachary Taylor, a passionate and ambitious software developer-in-training at Middle Tennessee State University, where I lead as the president of the MTSU ACM. My journey in tech is fueled by a blend of analytical problem-solving and effective communication, honed through collaborative projects and a diverse technical toolkit including React, NodeJS, and PHP.
+                    I’m an ambitious software developer-in-training at Middle Tennessee State University and president of the MTSU ACM. My unique background has prepared me to be a team player who communicates effectively, solves problems analytically, and possesses the technical skills to tackle any challenge, with experience in React, NodeJS, and PHP.
                     <br/>
                     <TechList />
                     <Link to="/about" className="flat-button">LANGUAGES</Link>
