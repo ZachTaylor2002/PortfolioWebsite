@@ -36,6 +36,7 @@ const About = () => {
                 <br/>
                     <LanguageList />
                     <Link to="/about/tech" className="flat-button">FRAMEWORKS/TECHNOLOGIES</Link>
+                    <Link to="/about/dev" className="flat-button">DEVELOPMENT TOOLS</Link>
                 </p>
 
 

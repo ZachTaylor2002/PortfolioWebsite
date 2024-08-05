@@ -3,9 +3,9 @@ import AnimatedLetters from "../../AnimatedLetters"
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3, faReact, faJava, faPython, faNodeJs  } from '@fortawesome/free-brands-svg-icons'
+import { faPython, faCss3, faJava, faHtml5, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
 import Loader from "react-loaders";
-import TechList from "../TechList";
+import DevList from "../DevList";
 import StarryBackground from '../StarryBackground';
 
 const About = () => {
@@ -30,12 +30,12 @@ const About = () => {
                         <AnimatedLetters letterClass={letterClass}  strArray = {"About me".split("")} idx={15}/>
                     </h1>
                     <p>
-                    I’m an ambitious software developer-in-training at Middle Tennessee State University and president of the MTSU ACM. My unique background has prepared me to be a team player who communicates effectively, solves problems analytically, and possesses the technical skills to tackle any challenge, with experience in React, NodeJS, and PHP.
+                    I’m an ambitious software developer-in-training at Middle Tennessee State University and president of the MTSU ACM. My unique background has prepared me to be a team player who communicates effectively, solves problems analytically.
                     <br/>
-                    <TechList />
+                    <DevList />
                     <Link to="/about" className="flat-button">LANGUAGES</Link>
                     <br/>
-                    <Link to="/about/dev" className="flat-button">DEVELOPMENT TOOLS</Link>
+                    <Link to="/about/tech" className="flat-button">FRAMEWORKS/TECHNOLOGIES</Link>
                     </p>
                 </div>
                 <div className = "stage-cube-cont">
