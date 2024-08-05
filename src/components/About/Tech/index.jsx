@@ -3,7 +3,7 @@ import AnimatedLetters from "../../AnimatedLetters"
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3, faReact, faJava, faPython, faNodeJs  } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faBootstrap, faReact, faJava, faPhp , faNodeJs  } from '@fortawesome/free-brands-svg-icons'
 import Loader from "react-loaders";
 import TechList from "../TechList";
 import StarryBackground from '../StarryBackground';
@@ -48,13 +48,13 @@ const About = () => {
                             <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
                         </div>
                         <div className = "face3">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+                            <FontAwesomeIcon icon={faBootstrap} color="#7952B3"/>
                         </div>
                         <div className = "face4">
                             <FontAwesomeIcon icon={faReact} color="#5ED4F4"/>
                         </div>
                         <div className = "face5">
-                            <FontAwesomeIcon icon={faPython} color="#ffd700"/>
+                            <FontAwesomeIcon icon={faPhp} color="#777BB4"/>
                         </div>
                         <div className = "face6">
                             <FontAwesomeIcon icon={faJava} color="#EC4D28"/>
