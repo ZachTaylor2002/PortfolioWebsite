@@ -4,6 +4,7 @@
   position: absolute;
   background: linear-gradient(to bottom, #0f2027 0%, #203a43 50%, #0f2027 100%);
   overflow: auto;  
+  overflow-x: hidden; // Add this line
 
   &::-webkit-scrollbar {
     background: linear-gradient(to bottom, #0f2027 0%, #203a43 50%, #0f2027 100%);
