@@ -10,28 +10,32 @@
 }
 
 .container.portfolio-page {
+    overflow: hidden; // Prevent scroll bar during animation
+
     .images-container {
+        overflow: hidden; // Ensure content does not overflow during animation
+
         .image-box {
             animation: slideInFromBottom 2s forwards;
             opacity: 0;
-            transform: translateY(0);
-
+            transform: translateY(100%); // Start from outside of the viewport
+            
             @for $i from 1 through 10 {
                 &:nth-child(#{$i}) {
-                    animation-delay: #{$i}s; 
+                    animation-delay: #{$i}; // Adjust delay to prevent large shifts
                 }
             }
         }
     }
 }
+
 .portfolio-page {
     padding-top: 85px;
     padding-left: 140px;
     padding-right: 50px;
     width: calc(100% - 190px);
-    position: initial;
-    height: 100%;
-    overflow: auto;
+    height: 100vh; // Fix height to viewport size
+    overflow-y: auto; // Allow vertical scrolling only when necessary
     overflow-x: hidden; // Prevent horizontal scrolling
 
     h1.page-title {
@@ -45,17 +49,17 @@
         position: relative; 
 
         .text-animate {
-            color: #ffd700; 
-            transition: color 0.3s ease; 
+            color: #ffd700;
+            transition: color 0.3s ease;
         }
         
         .text-animate-hover {
-            color: #ffd700; 
-            transition: color 0.3s ease; 
+            color: #ffd700;
+            transition: color 0.3s ease;
         }
         
         .text-animate-hover:hover {
-            color: #fff; 
+            color: #fff;
         }
 
         &:before {
@@ -97,6 +101,7 @@
         overflow: hidden;
         border-radius: 10px;
         max-width: calc(30%);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
         .portfolio-image {
             position: absolute;
@@ -104,6 +109,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
 
         .content {
@@ -208,9 +214,8 @@
             max-width: calc(50% - 10px);
 
             .content {
-                position: none;
+                position: static;
                 transition: none;
-                bottom: 0px;
                 background: transparent;
             }
 
