@@ -25,7 +25,6 @@ This portfolio is a personalized space for me to highlight my expertise, share m
 
 - **Skills Section:** A dedicated section to showcase my skills and proficiency in different programming languages, frameworks, and tools.
 
-- **Contact Form:** An interactive contact form allowing visitors to reach out to me directly.
 
 ## Installation
 
