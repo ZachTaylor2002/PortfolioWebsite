@@ -7,6 +7,13 @@
             "url": "https://fitnesswizard.netlify.app/"
         },
         {
+            "cover": "/portfolio/Spotify.png",
+            "title": "Spotify Clone",
+            "description": "ReactJS, TailwindCSS, JavaScript",
+            "url": "https://spotify-model.netlify.app/"
+          
+        },
+        {
             "cover": "/portfolio/Authentication API.jpg",
             "title": "Authentication API",
             "description": "NodeJS, ExpressJS, TypeScript, MongoDB",
